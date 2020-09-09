@@ -87,14 +87,14 @@
                     <ul>
                         <li class="itemPrincipalNavigation itemLogo">
                             <a href="#" title="Go home" class="logo">
-                                <img src="src/svg/logo-cv.svg" alt="Logo du curriculum vitae de Vento Michael">
+                                <img src="http://ventomichael.site/curriculum-vitae/src/svg/logo-cv.svg" alt="Logo du curriculum vitae de Vento Michael">
                             </a>
                         </li>
                         <li class="itemPrincipalNavigation">
                             <a href="#"><b>Accueil &or;</b></a>
                         </li>
                         <li class="itemPrincipalNavigation">
-                            <a href="#"><b>Curriculum Vitae</b></a>
+                            <a href="cv-officiel.html"><b>Ikea officiel</b></a>
                         </li>
                         <li class="itemPrincipalNavigation lastChildPrincipalNav">
                             <a href="http://ventomichael.site/portfolio/"><b>Portfolio</b></a>
@@ -105,7 +105,7 @@
                     <ul>
                         <li class="listStudent">
                             <label for="selectStudent" class="hidden">Sélectionner l'étudiant</label>
-                            <select name="selectStudent" id="selectStudent" class="selectStudend">
+                            <select name="selectStudent" id="selectStudent" class="selectStudend minimal">
                                 <option value="" selected disabled>Sélectionner l'étudiant</option>
                                 <option value="Gilson Nicolas">Gilson Nicolas</option>
                                 <option value="Yves Geysken">Yves Geysken</option>
@@ -123,8 +123,9 @@
     </div>
     <div class="breadcrumb">
         <a href="#" class="breadcrumbLink">
-            Accueil &gt;
+            Accueil
         </a>
+        <span>&gt;</span>
         <a href="#" class="breadcrumbLink">
             Curriculum Vitae
         </a>
@@ -133,31 +134,34 @@
 <main>
     <section class="containerImgInformations">
         <div class="containerImagesMe">
-            <img src="src/img/photo-cv.jpg"
-                 srcset="src/img/photo-cv_300.jpg 650w"
+            <img src="http://ventomichael.site/curriculum-vitae/src/img/photo-cv.jpg"
+                 srcset="http://ventomichael.site/curriculum-vitae/src/img/photo-cv_300.jpg 650w"
                  sizes="(max-width: 650px) 650px,
                             800px"
                  alt="Photo me représentant"
                  class="me">
             <div class="containerImagesWorks">
-                <img src="src/img/mini1_little.jpg"
-                     srcset="src/img/mini1_50.jpg 650w"
+                <img src="http://ventomichael.site/curriculum-vitae/src/img/mini1_little.jpg"
+                     srcset="http://ventomichael.site/curriculum-vitae/src/img/mini1_50.jpg 650w"
                      sizes="(max-width: 650px) 650px,
                             800px"
+                     onclick="img_box('http://ventomichael.site/curriculum-vitae/src/img/mini1.jpg')"
                      alt="Photo représentant un cafe et un MacBook"
-                     class="imagesWorks">
-                <img src="src/img/mini2_little.jpg"
-                     srcset="src/img/mini2_50.jpg 650w"
+                     class="imagesWorks fullScreen">
+                <img src="http://ventomichael.site/curriculum-vitae/src/img/mini2_little.jpg"
+                     srcset="http://ventomichael.site/curriculum-vitae/src/img/mini2_50.jpg 650w"
                      sizes="(max-width: 650px) 650px,
                             800px"
                      alt="Photo représentant un cahier des charges"
-                     class="imagesWorks">
-                <img src="src/img/mini3_little.jpg"
-                     srcset="src/img/mini3_50.jpg 650w"
+                     onclick="img_box('http://ventomichael.site/curriculum-vitae/src/img/mini2.jpg')"
+                     class="imagesWorks fullScreen">
+                <img src="http://ventomichael.site/curriculum-vitae/src/img/mini3_little.jpg"
+                     srcset="http://ventomichael.site/curriculum-vitae/src/img/mini3_50.jpg 650w"
                      sizes="(max-width: 650px) 650px,
                             800px"
                      alt="Photo représentant un cahier des charges et un MacBook"
-                     class="imagesWorks">
+                     onclick="img_box('http://ventomichael.site/curriculum-vitae/src/img/mini3.jpg')"
+                     class="imagesWorks fullScreen">
             </div>
         </div>
         <div class="informationsAboutMe" itemscope itemtype="https://schema.org/Person">
@@ -167,20 +171,20 @@
             <dl>
                 <dt itemprop="jobTitle"><b>WEB DESIGNER</b> Designer/graphiste</dt>
                 <dd class="characteristics characteristicsGender">Homme</dd>
-                <dd class="characteristics characteristicsWeight" itemprop="weight"><b>72 KG</b></dd>
-                <dd class="characteristics characteristicsTime">- Temps pleins</dd>
-                <dd class="characteristics characteristicsPhone" itemprop="telephone">0494 827 265</dd>
+                <dd class="characteristics characteristicsWeight"><b>72 KG</b></dd>
+                <dd class="characteristics characteristicsTime">- Temps plein</dd>
+                <dd class="characteristics characteristicsPhone">0494 827 265</dd>
             </dl>
             <p>
                 Ce designer web est efficace et efficient. <a href="#">Voir plus d'informations</a>
             </p>
             <p class="hourlyCost">
-                Le coût horaire s'éleve à 49€ / l'heure
+                Le coût horaire s'éleve à 49€ / heure
             </p>
             <div class="selectInterest">
-                <label for="selectInterest" class="hidden">Interets :</label>
-                <select name="selectInterest" id="selectInterest">
-                    <option value="" disabled selected>Interets</option>
+                <label for="selectInterest" class="hidden">Intérêts :</label>
+                <select name="selectInterest" class="minimal" id="selectInterest">
+                    <option value="" disabled selected>Intérêts</option>
                     <option value="boxe">Boxe</option>
                     <option value="football">Football</option>
                 </select>
@@ -190,35 +194,39 @@
                     <p class="yearsLabel">Age :</p>
                     <p class="yearsBox">21</p>
                 </div>
-                <div class="containerContact">
-                    <a href="#" class="contactLink">
+                    <a href="#" class="containerContact contactLink">
                         Contactez-moi
                     </a>
-                </div>
             </div>
             <div class="disponibilities">
                 <div class="disponibilitiesPeriods">
                     <p class="textDisponibilitiesPeriods">
-                        <b>Vérifier la disponibilité du Web designer <a class="linkDisponibilitiesPeriods" href="#">Sélectionnez
-                            une période</a></b>
+                        <b>Vérifier la disponibilité du Web designer</b>
                     </p>
+                    <p><b>
+                        <a class="linkDisponibilitiesPeriods" href="#">Sélectionnez
+                            une période</a>
+                    </b></p>
                 </div>
                 <div class="disponibilitiesOnline">
                     <p class="textDisponibilitiesOnline">
-                        <b>Disponible en ligne</b> Contactez-moi dés maintenant
+                        <b>Disponible en ligne</b>
+                    </p>
+                    <p>
+                        Contactez-moi dés maintenant
                     </p>
                 </div>
             </div>
             <div class="selectDisponibilites">
                 <label for="selectDisponibilites" class="hidden">Disponibilités</label>
-                <select name="selectDisponibilites" id="selectDisponibilites">
+                <select class="minimal" name="selectDisponibilites" id="selectDisponibilites">
                     <option value="" disabled selected>Disponibilités</option>
                     <option value="01/21&01/22">Du 1 janvier 2021 au du 1 janvier 2022</option>
                     <option value="01/22&01/23">Du 1 janvier 2022 au du 1 janvier 2023</option>
                 </select>
             </div>
             <p class="textQuestionContact">
-                Dans le cas d'une question, n'hésitez pas à me contacter.
+                En cas de questions, n'hésitez pas à me contacter.
             </p>
         </div>
     </section>
@@ -230,12 +238,12 @@
             <h3 class="hidden">
                 Connaissances informatique & parcours
             </h3>
-            <dl class="listInfo">
+            <dl class="listInfo listInfoFirstChild">
                 <dt class="aboutMeWebdesignerInfos">
                     <b>À propos de moi &gt;</b>
                 </dt>
                 <dd>
-                    <b>Caractéristique principales/secondaires</b>
+                    <b>Caractéristiques principales/secondaires</b>
                 </dd>
             </dl>
             <dl class="listInfo">
@@ -243,7 +251,7 @@
                     Aspects principaux &gt;
                 </dt>
                 <dd>
-                    Bonne connaissance des languages informatiques
+                    Bonnes connaissances des langages informatiques
                 </dd>
             </dl>
             <dl class="listInfo">
@@ -255,20 +263,20 @@
                     Illustator (2D),
                     Adobe Photoshop (2D) et
                     Adobe Première (Vidéo)
-                    Connaissance basiques de ces languages informatiques
+                    Connaissances basiques de ces languages informatiques
                 </dd>
             </dl>
             <dl class="listInfo">
                 <dt>
-                    En 2017 - 2019 &gt;
+                    2017 - 2019 &gt;
                 </dt>
                 <dd>
                     <dl class="underDlInfos dlCourse">
-                        <dd>
+                        <dt>
                             HEPL de Seraing
-                        </dd>
+                        </dt>
                         <dd>
-                            En 1<sup>ére</sup> année orientation Infographie et 2<sup>éme</sup> année en Infographie
+                            1<sup>ére</sup> année orientation Infographie et 2<sup>éme</sup> année en Infographie
                             orientation
                             Web.
                         </dd>
@@ -277,7 +285,7 @@
             </dl>
             <dl class="listInfo">
                 <dt>
-                    En 2011 - 2016 &gt;
+                    2011 - 2016 &gt;
                 </dt>
                 <dd>
                     <dl class="underDlInfos dlCourse">
@@ -285,9 +293,9 @@
                             IMT à liège
                         </dt>
                         <dd>
-                            En 1<sup>ére</sup> et 2<sup>éme</sup> année en général orientation Architecture. La 3<sup>éme</sup>
+                            1<sup>ére</sup> et 2<sup>éme</sup> année en général orientation Architecture. La 3<sup>éme</sup>
                             et
-                            4<sup>éme</sup> année en oriantation Art général. La 5<sup>éme</sup> et 6<sup>éme</sup>
+                            4<sup>éme</sup> année en oriantation Art général. 5<sup>éme</sup> et 6<sup>éme</sup>
                             année
                             orientation
                             Design graphique.
@@ -296,84 +304,84 @@
                 </dd>
             </dl>
         </section>
-
         <section class="containerPhysical">
-            <h3>
-                <b>Caractéristiques phyiques du Web Designer</b>
-            </h3>
-            <dl class="dlPhysicalCharacteristics listInfo" itemscope itemtype="">
-                <dt>
-                    <b>Taille /poids LOCALITER</b>
-                </dt>
-                <dd>
-                    <dl>
-                        <dt>N° de téléphone :</dt>
-                        <dd itemprop="telephone">0494 827 265</dd>
-                    </dl>
-                </dd>
-                <dd>
-                    <dl>
-                        <dt>Hauteur :</dt>
-                        <dd itemprop="height">1m 80</dd>
-                    </dl>
-                </dd>
-                <dd>
-                    <dl>
-                        <dt>Poids :</dt>
-                        <dd itemprop="weight">80kg</dd>
-                    </dl>
-                </dd>
-                <dd itemscope itemtype="https://schema.org/PostalAddress">
-                    <dl>
-                        <dt>Province :</dt>
-                        <dd itemprop="addressRegion">Juprelle</dd>
-                    </dl>
-                </dd>
-                <dd itemscope itemtype="https://schema.org/PostalAddress">
-                    <dl>
-                        <dt>Pays :</dt>
-                        <dd itemprop="addressCountry">Belgique</dd>
-                    </dl>
-                </dd>
-            </dl>
+            <div>
+                <h3>
+                    <b>Caractéristiques phyiques du Web Designer</b>
+                </h3>
+                <dl class="dlPhysicalCharacteristics listInfo" itemscope itemtype="">
+                    <dt>
+                        <b>Taille / poids LOCALITER</b>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>N° de téléphone :</dt>
+                            <dd itemprop="telephone">0494 827 265</dd>
+                        </dl>
+                    </dd>
+                    <dd>
+                        <dl>
+                            <dt>Taille :</dt>
+                            <dd itemprop="height">1m 80</dd>
+                        </dl>
+                    </dd>
+                    <dd>
+                        <dl>
+                            <dt>Poids :</dt>
+                            <dd itemprop="weight">80kg</dd>
+                        </dl>
+                    </dd>
+                    <dd itemscope itemtype="https://schema.org/PostalAddress">
+                        <dl>
+                            <dt>Localité :</dt>
+                            <dd itemprop="addressRegion">Juprelle</dd>
+                        </dl>
+                    </dd>
+                    <dd itemscope itemtype="https://schema.org/PostalAddress">
+                        <dl>
+                            <dt>Pays :</dt>
+                            <dd itemprop="addressCountry">Belgique</dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
         </section>
     </section>
     <form method="get" action="#">
         <div>
             <label class="round-blue-label" itemprop="givenName" for="surname"><span class="blueNumberForm">1</span>Prénom&nbsp;:
             </label>
-            <input class="block margin-top10" type="text" name="surname" placeholder="Votre prénom" id="surname"
+            <input class="block margin-top10" type="text" name="surname" placeholder="John" id="surname"
                    required>
         </div>
         <div>
             <label class="round-blue-label" itemprop="familyName" for="name"><span class="blueNumberForm">2</span>Nom de
                 famille&nbsp;: </label>
-            <input class="block margin-top10" type="text" placeholder="Votre nom de famille" name="name" id="name"
+            <input class="block margin-top10" type="text" placeholder="Snow" name="name" id="name"
                    required>
         </div>
         <div itemprop="telephone">
-            <label class="round-blue-label" for="tel"><span class="blueNumberForm">3</span>Numéro de téléphone&nbsp;:
+            <label class="round-blue-label" for="tel"><span class="blueNumberForm">3</span>Téléphone&nbsp;:
             </label>
             <input class="block margin-top10" type="tel" name="tel" id="tel" placeholder="+324 948 272 65">
         </div>
         <div itemscope itemtype="https://schema.org/Organization">
-            <label class="round-blue-label" itemprop="email" for="email"><span class="blueNumberForm">4</span>Entrer votre
-                email&nbsp;: </label>
-            <input class="block margin-top10" type="email" name="email" id="email" placeholder="Votre email" required>
+            <label class="round-blue-label" itemprop="email" for="email"><span class="blueNumberForm">4</span>Email&nbsp;: </label>
+            <input class="block margin-top10" type="email" name="email" id="email" placeholder="john.snow@gmail.com" required>
         </div>
         <div>
             <label class="round-blue-label" for="sujet"><span class="blueNumberForm">5</span>Sujet&nbsp;: </label>
-            <input class="block margin-top10" type="text" placeholder="Votre sujet" name="sujet" id="sujet" required>
+            <input class="block margin-top10" type="text" placeholder="Rencontre pour une entrevue ..." name="sujet" id="sujet" required>
         </div>
         <div>
             <label class="round-blue-label" for="area"><span class="blueNumberForm">6</span>Question&nbsp;: </label>
-            <textarea class="block margin-top10" name="area" id="area" cols="30" rows="10" placeholder="Votre texte ici"
+            <textarea class="block margin-top10" name="area" id="area" cols="30" rows="10" placeholder="J'aimerai vous rencontrez pour une entrevue afin de vous proposez un travail..."
                       required></textarea>
         </div>
         <div class="containerCheckbox">
-            <input type="checkbox" name="condition" id="condition" value="condition" required>
+            <input type="checkbox" class="checkboxSend" name="condition" id="condition" value="condition" required>
             <label for="condition">
-                Je prends conscience du message que j'envoie.
+                Je déclare que les données reprises dans ce formulaire sont correctes et complètes.
             </label>
         </div>
         <div id="submit">
@@ -382,15 +390,15 @@
     </form>
     <section class="containerComments">
         <h2>
-            Sélectionner un commentaire des employeurs
+            Objet de votre demande
         </h2>
         <div class="containerSelectComments">
-            <label for="selectComments">Sélectionner un commentaire</label>
+            <label for="selectComments">Sélectionner une des réponses suivante</label>
             <div class="selectComments">
-                <select name="selectComments" id="selectComments">
-                    <option value="" disabled selected>Commentaire</option>
-                    <option value="serious&fast">"Travail très sérieusement et est rapide"</option>
-                    <option value="dynamique">"Très dynamique dans ce qu'il entreprend"</option>
+                <select class="minimal" name="selectComments" id="selectComments">
+                    <option value="" disabled selected>--</option>
+                    <option value="serious&fast">Réaliser un site internet</option>
+                    <option value="dynamique">Réaliser un logo</option>
                 </select>
             </div>
         </div>
@@ -499,14 +507,14 @@
                 </ul>
             </li>
             <li class="languagesBackTop">
-                <ul>
+                <ul class="languagesContainer">
                     <li>
-                        <ul>
+                        <ul class="frenchlanguagesContainer">
                             <li class="firstLiLanguague">
-                                <a href="#"> Français</a>
+                                <a href="#"><b>Français</b></a>
                             </li>
                             <li>
-                                <a href="#" class="link">Anglais</a>
+                                <a href="#" class="languaguesLink"><b>Anglais</b></a>
                             </li>
                         </ul>
                     </li>
@@ -518,9 +526,9 @@
         </ul>
         <div class="containerNameSystem">
             <div>
-                <p class="firstLiLanguague">VENTO Michael</p>
-                <a href="#" class="link">
-                    Changer d'étudiants
+                <p class="firstLiLanguague"><b>VENTO Michael</b></p>
+                <a href="#" class="link languaguesLink">
+                    <b>Changer d'étudiants</b>
                 </a>
             </div>
             <div>
@@ -529,5 +537,7 @@
         </div>
     </nav>
 </footer>
+<script>let vopa_img_box,idpopup_img_box,bg_color_img_box="rgba(0,0,0,0.9)",allow_hide_scroll_img_box="yes",use_fade_inout_img_box="yes",speed_img_box=.08,z_index_dv_img_box=999;function img_box(o){let i="string"==typeof o?o:o.src;vopa_img_box=0;let e,p,_,t=window.innerHeight,g=window.innerWidth,m=new Image;m.src=i,m.onload=function(){e=m.height,wimg_img_box=m.width,idpopup_img_box.innerHTML="<img src="+i+">",wimg_img_box>g?(idpopup_img_box.getElementsByTagName("img")[0].style.width="90%",idpopup_img_box.getElementsByTagName("img")[0].style.alignSelf="center",idpopup_img_box.getElementsByTagName("img")[0].style.margin="0 auto"):e>t&&(idpopup_img_box.getElementsByTagName("img")[0].style.height="90%",e=90*t/100),e<t?(p=t/2-e/2,idpopup_img_box.style.paddingTop=p+"px"):idpopup_img_box.style.paddingTop="0px","yes"==allow_hide_scroll_img_box&&(document.body.style.overflow="hidden"),idpopup_img_box.style.display="flex"},"yes"==use_fade_inout_img_box?_=setInterval(function(){vopa_img_box<=1.1?(idpopup_img_box.style.opacity=vopa_img_box,vopa_img_box+=speed_img_box):(idpopup_img_box.style.opacity=1,clearInterval(_))},10):idpopup_img_box.style.opacity=1,idpopup_img_box.onclick=function(){if("yes"==use_fade_inout_img_box){let o=setInterval(function(){vopa_img_box>=0?(idpopup_img_box.style.opacity=vopa_img_box,vopa_img_box-=speed_img_box):(idpopup_img_box.style.opacity=0,clearInterval(o),idpopup_img_box.style.display="none",idpopup_img_box.innerHTML="",document.body.style.overflow="visible",vopa_img_box=0)},10)}else idpopup_img_box.style.opacity=0,idpopup_img_box.style.display="none",idpopup_img_box.innerHTML="",document.body.style.overflow="visible"}}window.onload=function(){let o=document.createElement("div");o.id="img_box",o.classList="img_box",document.getElementsByTagName("body")[0].appendChild(o),(idpopup_img_box=document.getElementById("img_box")).style.top=0,idpopup_img_box.style.left=0,idpopup_img_box.style.opacity=0,idpopup_img_box.style.width="100%",idpopup_img_box.style.height="100%",idpopup_img_box.style.display="none",idpopup_img_box.style.position="fixed",idpopup_img_box.style.cursor="pointer",idpopup_img_box.style.textAlign="center",idpopup_img_box.style.zIndex=z_index_dv_img_box,idpopup_img_box.style.backgroundColor=bg_color_img_box};
+</script>
 </body>
 </html>
